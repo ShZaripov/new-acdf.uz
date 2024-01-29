@@ -3,10 +3,10 @@
     <section class="form_blade">
         <div class="main-container">
             <div class="grid">
-                    <div class=" col-6_sm-12">
+                    {{-- <div class=" col-6_sm-12">
 
-                    </div>
-                <div class="col-6_sm-12">
+                    </div> --}}
+                <div class="main">
                 <div>
                     <p>YOUNG AMBASSADORS</p>
                     <p>Students and young graduates from all over the Uzbekistan can apply to take part in the program.
@@ -36,7 +36,7 @@
                     <div class="input-text">
                         <?= Form::text('name', '', [
                             'class' => 'form-control',
-                            'placeholder' => __('main.name') . ' *',
+                            'placeholder' => " Name *",
                         ]) ?>
                         @if ($errors->has('name'))
                             <span class="help-block">
@@ -115,7 +115,7 @@
 
                     <div class="input-text">
                         <input type="text" name="address" id="address" class="form-control"
-                            placeholder="{{ __('main.address') }} *">
+                            placeholder="Address *">
                         @if ($errors->has('address'))
                             <span class="help-block">
                                 <small>{{ $errors->first('address') }}</small>
@@ -230,7 +230,7 @@
                     <hr>
                     {{-- <br> --}}
 
-                    <div class="input-text" style="width:200px;">
+                    <div class="input-text level_of_italian" style="width:200px;">
                         {{-- <span for="select-box" class="mr-4">{{__('main.level_of_italian')}}</span> --}}
                         <select name="level_of_italian:">
                             <option value="A1">{{ __('main.level_of_italian') }}:</option>
@@ -352,7 +352,11 @@
         }
         .english_level select {
             -moz-appearance: auto !important;
+
             /* -webkit-appearance: none; */
+        }
+        .level_of_italian {
+            -moz-appearance: auto !important;
         }
         /* Style the custom radio button */
         label::before {
@@ -387,6 +391,18 @@
         input[type="radio"]:checked+label {
             font-weight: bold;
             color: #007bff;
+            
+        }
+
+        .main {
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        .grid {
+            justify-content: center;
+            align-items: center;
+
         }
         @media (max-width: 1024px)    {
                 .form_blade{

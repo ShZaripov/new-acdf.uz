@@ -40,7 +40,7 @@ function() {
     Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
-	Route::get('/', 'MainController@index')->name('home');
+	Route::get('/', 'FormController@index')->name('home');
 
 	Route::post('/subscribers', 'MainController@subscriber')->name('subscribers');
 	Route::get('/search', 'MainController@search')->name('site.search');

@@ -8,6 +8,7 @@
         {{-- <div class="header_menu-btn" data-action="click->menu#openMenu">
             Меню
         </div> --}}
+        {{-- <div class="button">{{route('form.index')}}</div> --}}
     </div>
 
     <div class="menu" data-menu-target="menu">
