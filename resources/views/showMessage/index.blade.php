@@ -62,9 +62,11 @@
                     <th>Citizenship</th>
                     <th>Address</th>
                     <th>Email</th>
+                    <th>Social Media account</th>
                     <th>Educational Institution</th>
                     <th>Field of studies</th>
-                    <th>Social Media account</th>
+                    <th>Year of studies</th>
+                    <th>Year of graduation</th>       
                     <th>Level Of English:</th>
                     <th>Level of Italian:</th>
 
@@ -117,8 +119,6 @@
                         <td>
                           {{ $showMessage->yearOfStudies }}
                         </td>
-                      
-
                         <td>
                             {{ $showMessage->english_level }}
                         </td>

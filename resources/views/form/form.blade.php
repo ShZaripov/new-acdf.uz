@@ -263,9 +263,6 @@
                             @endif
                         </div>
 
-
-
-
                         <div class="form-control">
                             <span class="mr-4" for="radio_1">{{ __('main.can_you_be_fully') }} </span><br />
                             <div class="float-right">
