@@ -54,9 +54,9 @@
                         </div>
 
                         <div class="">
-                            <span class="mr-12">Date of birth(18+)</span>
+                            <span class="mr-12"></span>
                             <?= Form::date('birthday', '', [
-                                    'placeholder' => __('main.birthday') . ' * (DD.MM.YYYY)',
+                                    'placeholder' => "Date of birth(18+) .  * (DD.MM.YYYY)",
                                     'class' => 'form-control',
                                 ]) ?>
 
@@ -65,9 +65,9 @@
                                     <small>{{ $errors->first('birthday') }}</small>
                                 </span>
                             @endif
-                            <hr>
+                           
                         </div>
-
+                    <br>
 
 
 
@@ -206,7 +206,7 @@
                         </div>
 
                         <div class="input-text" style="width:200px;">
-                            {{-- <span for="select-box"  style="" class="mr-4">{{ __('main.english_level') }}</span> --}}
+                           
                             <select name="english_level" class="form-control">
                                 <option value="">{{ __('main.english_level') }}: </option>
                                 <option value="A1"> A1</option>
@@ -222,12 +222,12 @@
                                 </span>
                             @endif
                         </div>
-                        <hr>
+                       
                         {{-- <br> --}}
 
-                        <div class="input-text level_of_italian" style="width:200px;">
+                        <div class="input-text" style="width:200px;">
                             {{-- <span for="select-box" class="mr-4">{{__('main.level_of_italian')}}</span> --}}
-                            <select name="level_of_italian:">
+                            <select name="english_level" class="form-control">
                                 <option value="A1">{{ __('main.level_of_italian') }}:</option>
                                 <option value="A1">A1</option>
                                 <option value="A1">A2</option>
@@ -242,7 +242,7 @@
                                 </span>
                             @endif
                         </div>
-                        <hr>
+                        
                         {{-- <br> --}}
 
 
@@ -263,7 +263,7 @@
                             @endif
                         </div>
 
-                        <div class="form-control">
+                        <div class="py-4 form-control">
                             <span class="mr-4" for="radio_1">{{ __('main.can_you_be_fully') }} </span><br />
                             <div class="float-right">
 
@@ -274,8 +274,8 @@
                                 <label for="radio-2">no</label>
                             </div>
                         </div>
-
-                        <hr>
+                       
+                        
 
                         <div class="input-text">
 
@@ -292,7 +292,7 @@
 
                         <br>
                         <div class="submit-button">
-                            {{ Form::submit(__('main.submit'), ['class' => 'btn-blue']) }}
+                            {{ Form::submit(__('Send'), ['class' => 'btn-blue']) }}
                         </div>
 
                         <?php echo Form::close(); ?>

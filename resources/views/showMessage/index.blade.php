@@ -120,6 +120,9 @@
                           {{ $showMessage->yearOfStudies }}
                         </td>
                         <td>
+                            {{ $showMessage->expected_year_graduation }}
+                          </td>
+                        <td>
                             {{ $showMessage->english_level }}
                         </td>
                         <td>
@@ -127,9 +130,7 @@
                         </td>
 
                        
-                        <td>
-                            {{ $showMessage->expected_year_graduation }}
-                        </td>
+                       
                         
                       
 
