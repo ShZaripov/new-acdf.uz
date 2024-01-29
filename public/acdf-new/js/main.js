@@ -30,16 +30,16 @@ $("body").css({"opacity":"1", "duration": time, "ease": "power4Out"})
 // end of fade-in body
 
 // color header //
-if($('[data-main-target="header"]').hasClass('invert-header')){
-  document.addEventListener('scroll', () => {
-    let scrollPos = window.scrollY || window.scrollTop
-    if (scrollPos > (window.innerHeight - 200)){
-      $('[data-main-target="header"]').addClass('is-active')
-    } else {
-      $('[data-main-target="header"]').removeClass('is-active')
-    }
-  })
-}
+// if($('[data-main-target="header"]').hasClass('invert-header')){
+//   document.addEventListener('scroll', () => {
+//     let scrollPos = window.scrollY || window.scrollTop
+//     if (scrollPos > (window.innerHeight - 200)){
+//       $('[data-main-target="header"]').addClass('is-active')
+//     } else {
+//       $('[data-main-target="header"]').removeClass('is-active')
+//     }
+//   })
+// }
 // end of color header //
 
 if(url != '/' && url != '/en' && url != '/ru' && url != '/oz'){

@@ -42,6 +42,7 @@ function() {
 
 	Route::get('/', 'FormController@index')->name('home');
 
+	Route::get('/exportExcel', 'FormController@exportExcel')->name('exportExcel');
 	Route::post('/subscribers', 'MainController@subscriber')->name('subscribers');
 	Route::get('/search', 'MainController@search')->name('site.search');
 	Route::get('/contacts', 'MainController@contacts')->name('site.contacts');

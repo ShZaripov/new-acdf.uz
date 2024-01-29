@@ -1,9 +1,9 @@
 <!-- Header -->
 <header class="header">
-    <div class="header invert-header" data-main-target="header">
+    <div class="header invert-header is-active" data-main-target="header">
         <a href="{{ route('home') }}" class="header_logo">
-            <img alt="acdf-logo" data-logo="{{ asset('/acdf-new/images/logo-'.\App::getLocale().'.svg') }}" data-logomin="{{ asset('/acdf-new/images/logo-letter-black.svg') }}"
-                 data-main-target="headerLogo" src="{{ asset('/acdf-new/images/logo-'.\App::getLocale().'.svg') }}" />
+            <img alt="acdf-logo" data-logo="{{ asset('acdf-new/images/logo-en.svg') }}" data-logomin="{{ asset('acdf-new/images/logo-en.svg') }}"
+                 data-main-target="headerLogo" src="{{ asset('acdf-new/images/logo-en.svg') }}" />
         </a>
         {{-- <div class="header_menu-btn" data-action="click->menu#openMenu">
             Меню

@@ -1,27 +1,29 @@
 <div class="navbar-default sidebar" role="navigation">
     <div class="sidebar-nav navbar-collapse">
         <ul class="nav" id="side-menu">
-            <li>
+            {{-- <li>
                 <a href="{{ route('dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-            </li>
-            <li>
+            </li> --}}
+            {{-- <li>
                 <a href="{{ route('activities.index') }}"><i class="fa fa-table fa-fw"></i> Проекты</a>
-            </li>
-            <li>
+            </li> --}}
+            {{-- <li>
                 <a href="{{ route('programs.index') }}"><i class="fa fa-table fa-fw"></i> Программы</a>
-            </li>
+            </li> --}}
             @role('admin')
-            <li>
+            {{-- <li>
                 <a href="{{ route('pages.index') }}"><i class="fa fa-table fa-fw"></i> Страницы</a>
-            </li>
+            </li> --}}
             @endrole
-            <?php /*
+            <?php
+             /*
             <li>
                 <a href="{{ route('publications.index') }}"><i class="fa fa-table fa-fw"></i> О нас пишут</a>
             </li>
-            */ ?>
-{{-- 
-            <li>
+            */
+             ?>
+
+            {{-- <li>
                 <a href="#"><i class="fa fa-table fa-fw"></i> Новости<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
@@ -45,26 +47,26 @@
 {{--            <li>--}}
 {{--                <a href="{{ route('mainbanners.index') }}"><i class="fa fa-table fa-fw"></i> Баннеры</a>--}}
 {{--            </li>--}}
-            <li>
+            {{-- <li>
                 <a href="{{ route('social-networks.index') }}"><i class="fa fa-table fa-fw"></i> Социальные сети</a>
-            </li>
+            </li> --}}
             @role('admin')
-            <li>
+            {{-- <li>
                 <a href="{{ route('menu.index') }}"><i class="fa fa-table fa-fw"></i> Меню</a>
             </li>
             <li>
                 <a href="{{ route('options.index') }}"><i class="fa fa-table fa-fw"></i> Контакты</a>
-            </li>
+            </li> --}}
             @endrole
-            <li>
+            {{-- <li>
                 <a href="{{ route('textblocks.index') }}"><i class="fa fa-table fa-fw"></i> Текстовые блоки</a>
             </li>
             <li>
                 <a href="{{ route('blocks.index') }}"><i class="fa fa-table fa-fw"></i> Блоки</a>
-            </li>
+            </li> --}}
 
             <li>
-                <a href="{{ route('showMessage.index') }}"><i class="fa fa-table fa-fw"></i> Show Message</a>
+                <a href="{{ route('showMessage.index') }}"><i class="fa fa-table fa-fw"></i> открытый конкурс</a>
             </li>
 
             <?php 

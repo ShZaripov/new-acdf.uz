@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\DB;
 class ShowMessageController extends Controller
 {
     public function index(){
-        $showMessages = DB::table("form")->orderBy("id", "DESC")->get();
+        $showMessages = DB::table('form')->orderBy("id", "DESC")->paginate(15);
+        // $showMessages = DB::table("form")->orderBy("id", "DESC")->get();
         return view("showMessage.index", compact(["showMessages"]));
     }
 }

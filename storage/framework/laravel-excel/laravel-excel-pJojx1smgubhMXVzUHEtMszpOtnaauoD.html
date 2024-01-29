@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    
+
+    
+</html>
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="KUjWAD6CbtU6HOHJwNgXGxirpHGwQ8LAcUqstrJa">
+
+        <title>Laravel</title>
+
+         <!-- Bootstrap Core CSS -->
+        <link href="http://127.0.0.1:8000/admin-assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <link href="http://127.0.0.1:8000/admin-assets/css/metisMenu.min.css" rel="stylesheet">
+
+        <!-- Timeline CSS -->
+        <link href="http://127.0.0.1:8000/admin-assets/css/timeline.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="http://127.0.0.1:8000/admin-assets/css/startmin.css" rel="stylesheet">
+
+        <link href="http://127.0.0.1:8000/admin-assets/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/acdf/css/font-awesome.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js" integrity="sha512-i/6nAYMMwXZ3dTsq+ngdkSl4MbtVQF0FdCeqP5/1HSXPxyEd43vrxhafg1P4iqKRAnZVHn48GYaFUYRcTB0YrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="http://127.0.0.1:8000/admin-assets/css/add.css?v=14"/>
+            </head>
+    <body>
+
+        <div id="wrapper">
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/admin">ADMIN</a>
+                </div>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <ul class="nav navbar-nav navbar-left navbar-top-links">
+                    <li><a href="/" target="_blank"><i class="fa fa-home fa-fw"></i> Website</a></li>
+                </ul>
+
+                <ul class="nav navbar-right navbar-top-links">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i> Shohruh Zaripov <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="http://127.0.0.1:8000/logout"
+                                    onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                    <i class="fa fa-sign-out fa-fw"></i> Logout
+                                </a>
+
+                                <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" style="display: none;">
+                                    <input type="hidden" name="_token" value="KUjWAD6CbtU6HOHJwNgXGxirpHGwQ8LAcUqstrJa">
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav pull-right desLangs">
+                                    <li >
+                        <a rel="alternate" hreflang="oz" href="http://127.0.0.1:8000/oz/exportExcel">
+                            O’zbekcha
+                        </a>
+                    </li>
+                                    <li class='active'>
+                        <a rel="alternate" hreflang="ru" href="http://127.0.0.1:8000/ru/exportExcel">
+                            Русский
+                        </a>
+                    </li>
+                                    <li >
+                        <a rel="alternate" hreflang="en" href="http://127.0.0.1:8000/en/exportExcel">
+                            English
+                        </a>
+                    </li>
+                              </ul>
+                <!-- /.navbar-top-links -->
+
+                <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            
+            
+            
+                        
+            
+
+            
+
+
+
+
+
+
+            
+                        
+
+            <li>
+                <a href="http://127.0.0.1:8000/admin/showMessages"><i class="fa fa-table fa-fw"></i> открытый конкурс</a>
+            </li>
+
+                                </ul>
+    </div>
+</div>                        </nav>
+            
+            <div id="page-wrapper">
+                                                                        <div class="row">
+            <div class="col-lg-12">
+                
+                <h1 class="page-header">Information</h1>
+            </div>
+        </div>
+        <div class="clearfix">
+      <a href="http://127.0.0.1:8000/exportExcel" class="btn btn-primary pull-right">скачать excell </a>
+    </div>
+    <br>
+        <div class="table-reponsive">
+            <table class="table">
+                
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Phone</th>
+                    <th>Birthday</th>
+                    <th>Country and City
+                        of Residence</th>
+                    <th>Country and
+                        City of Birth</th>
+                    <th>Citizenship</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Educational Institution</th>
+                    <th>Field of studies</th>
+                    <th>Social Media account</th>
+                    <th>Level Of English:</th>
+                    <th>Level of Italian:</th>
+
+                    <th>Other Language(s)</th>
+                    <th>Can you be fully available from August
+                      18th until October 1th, 2024?</th>
+                    <th>About You (English)</th>
+                </tr>
+                                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Shohruh
+                        </td>
+                        <td>
+                            Zaripov
+                        </td>
+                        <td>
+                            +998975288899
+                        </td>
+                        <td>
+                            2024-01-16
+                        </td>
+                        <td>
+                            Uzbekistan
+                        </td>
+                        <td>
+                            Шовот
+                        </td>
+                        <td>
+                            123
+                        </td>
+                        <td>
+                            oq oltin,42
+                        </td>
+                        <td>
+                            shoh5288899@gmail.com
+                        </td>
+                        <td>
+                          123
+                        </td>
+                        <td>
+                            123
+                        </td>
+                        <td>
+                          123
+                       </td>
+                        <td>
+                          123
+                        </td>
+                      
+
+                        <td>
+                            A1
+                        </td>
+                        <td>
+                            
+                        </td>
+
+                       
+                        <td>
+                            123
+                        </td>
+                        
+                      
+
+                        <td>
+                            qwertyu
+                        </td>
+                        <td>
+                          yo&#039;q
+                      </td>
+                        <td>
+                            qwqertyuiopasdf
+                        </td>
+
+                    </tr>
+                            </table>
+        </div>
+
+        
+    </body>
+            </div>
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="http://127.0.0.1:8000/admin-assets/js/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="http://127.0.0.1:8000/admin-assets/js/bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="http://127.0.0.1:8000/admin-assets/js/metisMenu.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <script src="http://127.0.0.1:8000/admin-assets/js/raphael.min.js"></script>
+        <!-- <script src="http://127.0.0.1:8000/admin-assets/js/morris.min.js"></script> -->
+        <!-- <script src="http://127.0.0.1:8000/admin-assets/js/morris-data.js"></script> -->
+
+        <script src="http://127.0.0.1:8000/admin-assets/tinymce/jquery.tinymce.min.js"></script>
+        <script src="http://127.0.0.1:8000/admin-assets/tinymce/tinymce.min.js"></script>
+
+        <script src="http://127.0.0.1:8000/admin-assets/datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="http://127.0.0.1:8000/admin-assets/datepicker/locales/bootstrap-datepicker.ru.min.js"></script>
+        <script src="http://127.0.0.1:8000/admin-assets/js/jquery.number.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="http://127.0.0.1:8000/admin-assets/js/startmin.js"></script>
+        <script src="http://127.0.0.1:8000/admin-assets/js/add.js?v=14"></script>
+        
+    </body>
+</html>

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Form;
+use App\Exports\FormExport;
+use Maatwebsite\Excel\Facades\Excel;
 // use App\Form as AppForm;
 // use App\Models\Form;
 use App\Repositories\MainRepository;
@@ -75,6 +77,11 @@ class FormController extends Controller
      * @return \Illuminate\Http\Response
      */
     
+    public function exportExcel() {
+        return Excel::download(new FormExport, 'form.xlsx');
+    }
+
+
     public function store(Request $request)
     {
         // dd($request->all());
