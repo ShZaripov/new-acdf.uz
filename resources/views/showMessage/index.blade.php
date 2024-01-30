@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <style>
+    {{-- <style>
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
@@ -24,7 +24,7 @@
         tr:nth-child(even) {
             background-color: #dddddd;
         }
-    </style>
+    </style> --}}
 </head>
 
 <body>
@@ -46,12 +46,13 @@
             <a href="{{ route('exportExcel') }}" class="btn btn-primary pull-right">скачать excell </a>
         </div>
         <br>
+
         <div class="table-reponsive">
             <table class="table">
-                {{-- {{ tableLength($model)['lengthPage'] }} --}}
+                {{ tableLength($showMessages)['lengthPage'] }}
                 <thead>
                     <tr>
-                        {{-- <th>#</th> --}}
+                        <th>#</th>
                         <th>Id</th>
                         <th>Name</th>
                         <th>Surname</th>
@@ -75,13 +76,19 @@
                         <th>Other Language(s)</th>
                         <th>Can you be fully available</th>
                         <th>About You (English)</th>
+                        {{-- <th>show</th>
+                        <th>edit</th>
+                        <th>delete</th> --}}
                     </tr>
                 </thead>
+                <?php if ($showMessages): ?> 
                 <tbody>
-                    @foreach ($showMessages as $showMessage)
-                <tbody>
+                    <?php $i = tableLength($showMessages)['startPage']; foreach ($showMessages as $showMessage): ?>
+                    {{-- @foreach ($showMessages as $showMessage) --}}
+                
 
                     <tr>
+                        <td>{{ $i }}</td>
                         <td>
                             {{ $showMessage->id }}
                         </td>
@@ -144,12 +151,16 @@
                             {{ $showMessage->about_you_eng }}
                         </td>
 
+                        {{--  --}}
                     </tr>
-
+                    <?php $i++; endforeach ?>
                 </tbody>
-                @endforeach
+            <?php endif ?>
+
+                {{-- @endforeach --}}
             </table>
         </div>
+
         <div class="row justify-content-center mt-5">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 {{ $showMessages->links() }}
@@ -157,7 +168,18 @@
         </div>
 
         {{-- @endforeach --}}
-    </body>
+    
 @endsection
 
+        @section('css')
+            <style>
+                #loader {
+                    position: absolute;
+                    right: 18px;
+                    top: 30px;
+                    width: 20px;
+                }
+            </style>
+        @endsection
+    </body>
 </html>

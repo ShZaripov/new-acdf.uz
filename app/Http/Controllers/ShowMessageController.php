@@ -13,4 +13,16 @@ class ShowMessageController extends Controller
         // $showMessages = DB::table("form")->orderBy("id", "DESC")->get();
         return view("showMessage.index", compact(["showMessages"]));
     }
+
+    public function show(){
+        
+    }
+
+    public function edit(){
+        
+    }
+    public function delete(){
+        DB::delete('showMessage', ['id']);
+    }
+
 }

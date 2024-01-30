@@ -13,6 +13,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11"/>
     <link rel="shortcut icon" href="{{ asset('acdf/img/favicon.png') }}" type="image/png">
 
+    
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#003DA7">
     <!-- Windows Phone -->

@@ -226,8 +226,8 @@
 
                         <div class="input-text" style="width:200px;">
                             {{-- <span for="select-box" class="mr-4">{{__('main.level_of_italian')}}</span> --}}
-                            <select name="english_level" class="form-control">
-                                <option value="A1">{{ __('main.level_of_italian') }}:</option>
+                            <select name="level_of_italian" class="form-control">
+                                <option value="">{{ __('main.level_of_italian') }}:</option>
                                 <option value="A1">A1</option>
                                 <option value="A1">A2</option>
                                 <option value="B1">B1</option>

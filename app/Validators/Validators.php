@@ -485,7 +485,7 @@ class Validators
             'educational'               => 'required|string|min:1|max:254',
             'failOf_studies'               => 'required|string|min:1|max:254',
              'yearOfStudies'               => 'required|string|min:1|max:254',
-             'will_you_still'               => 'string',
+            //  'will_you_still'               => 'string',
              'expected_year_graduation'               => 'required|string|min:1|max:254',
              'can_you_be_fully'               => 'required|string',
              'english_level'               => 'string',
