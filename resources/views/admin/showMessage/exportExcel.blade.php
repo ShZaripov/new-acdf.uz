@@ -7,25 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <style>
-        th{
-            color: red;
-        }
-            .table thead {
-            background-color: blue;
-        }
-        .table {
-            background-color: blue;
-        }
-        .table-tr {
-            background-color: blue;
-            color: red;
-            padding: 1px;
-        }
-        .table{
-            color: red;
-        }
-    </style>
+
 
 </head>
 
@@ -127,13 +109,24 @@
                         </td>
 
 
-                       
+
 
                     </tr>
             @endforeach
             </tbody>
         </table>
     </div>
+    @section('css')
+        <style>
+            #loader {
+                position: absolute;
+                right: 18px;
+                top: 30px;
+                width: 20px;
+            }
+            
+        </style>
+    @endsection
 </body>
 
 

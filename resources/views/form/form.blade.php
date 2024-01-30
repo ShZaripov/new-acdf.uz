@@ -266,10 +266,10 @@
                             <span class="mr-4" for="radio_1">{{ __('main.can_you_be_fully') }} </span><br />
                             <div class="float-right">
 
-                                <input class="mr-4" id="radio-1" type="radio" name="can_you_be_fully" value="ha"
+                                <input class="mr-4" id="radio-1" type="radio" name="can_you_be_fully" value="yes"
                                     checked>
                                 <label class="mr-6" for="radio-1">yes</label>
-                                <input id="radio-2" type="radio" name="can_you_be_fully" value="yo'q">
+                                <input id="radio-2" type="radio" name="can_you_be_fully" value="no">
                                 <label for="radio-2">no</label>
                             </div>
                         </div>

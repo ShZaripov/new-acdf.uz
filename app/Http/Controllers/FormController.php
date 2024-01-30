@@ -60,8 +60,9 @@ class FormController extends Controller
      */
     
     public function exportExcel() {
-        return Excel::git download(new FormExport, 'opencall.xlsx');
+        return Excel::download(new FormExport, 'opencall.xlsx');
     }
+
 
     public function store(Request $request)
     {
