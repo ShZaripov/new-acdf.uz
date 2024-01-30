@@ -5,24 +5,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <p>YOUNG AMBASSADORS</p>
+                    <p style="text-align: center">YOUNG AMBASSADORS</p>
                     <p>Students and young graduates from all over the Uzbekistan can apply to take part in the program.
                     </p>
                     <p> The application for participation as a Young Ambassador is online only. The form should be
                         filled in
-                        English.</p>
-                    <p> There are no application or participation fees.
+                        English.   There are no application or participation fees.
                     </p>
-                    {{-- <p>The selection of participants takes place until 1 April 2024 by Michelangelo Foundation.</p> --}}
+                  
+                    
                     <p>All invited students will be informed and asked to confirm their participation.</p>
                     <p>By submitting your application, you consent to the processing of your personal information for
                         the
                         purposes of the Young Ambassadors Program.
                     </p>
-                    <p>Note: Students will have the flights, accommodation (shared room), </p>
-                    <p>meals (breakfasts and lunches) covered. A daily stipend will be provided.
+                    <p>Note: Students will have the flights, accommodation (shared room), 
+                    meals (breakfasts and lunches) covered. A daily stipend will be provided.
                     </p>
-
                     <div style="margin-top: 50px">
                         <?php echo Form::open([
                             'url' => route('form.store'),
@@ -44,7 +43,7 @@
                         <div class="input-text">
                             <?= Form::text('surname', '', [
                                     'class' => 'form-control',
-                                    'placeholder' => __('main.surname') . ' *',
+                                    'placeholder' => ' Surname *',
                                 ]) ?>
                             @if ($errors->has('surname'))
                                 <span class="help-block">
@@ -76,7 +75,7 @@
                         <div class="input-text">
                             <?= Form::text('country_city', '', [
                                     'class' => 'form-control',
-                                    'placeholder' => __('main.country_city') . ' *',
+                                    'placeholder' => " Country and City of Birth  *",
                                 ]) ?>
                             @if ($errors->has('country_city'))
                                 <span class="help-block">
@@ -88,7 +87,7 @@
                         <div class="input-text">
                             <?= Form::text('country_residence', '', [
                                     'class' => 'form-control',
-                                    'placeholder' => __('main.country_residence') . ' *',
+                                    'placeholder' => " Country and City of Residence *",
                                 ]) ?>
                             @if ($errors->has('country_residence'))
                                 <span class="help-block">
@@ -100,7 +99,7 @@
                         <div class="input-text">
                             <?= Form::text('Citizenship', '', [
                                     'class' => 'form-control datepicker',
-                                    'placeholder' => __('main.Citizenship') . ' *',
+                                    'placeholder' => ' Citizenship   *',
                                 ]) ?>
                             @if ($errors->has('Citizenship'))
                                 <span class="help-block">
@@ -112,7 +111,7 @@
 
                         <div class="input-text">
                             <input type="text" name="address" id="address" class="form-control"
-                                placeholder="Address *">
+                                placeholder=" Address *">
                             @if ($errors->has('address'))
                                 <span class="help-block">
                                     <small>{{ $errors->first('address') }}</small>
@@ -121,7 +120,7 @@
 
                         </div>
                         <div class="input-text">
-                            <input type="text" name="phone" id="address" class="form-control" placeholder="Phone *">
+                            <input type="text" name="phone" id="address" class="form-control" placeholder=" Phone *">
                             @if ($errors->has('phone'))
                                 <span class="help-block">
                                     <small>{{ $errors->first('phone') }}</small>
@@ -132,7 +131,7 @@
                         <div class="input-text">
                             <?= Form::text('email', '', [
                                     'class' => 'form-control',
-                                    'placeholder' => 'Email *',
+                                    'placeholder' => ' Email *',
                                 ]) ?>
                             @if ($errors->has('email'))
                                 <span class="help-block">
@@ -145,7 +144,7 @@
 
                             <?= Form::text('social_media_account', '', [
                                     'class' => 'form-control ',
-                                    'placeholder' => __('main.social_media_account') . ' *',
+                                    'placeholder' => " Social media account   *",
                                 ]) ?>
                             @if ($errors->has('social_media_account'))
                                 <span class="help-block">
@@ -158,7 +157,7 @@
                         <div class="input-text">
                             <?= Form::text('educational', '', [
                                     'class' => 'form-control',
-                                    'placeholder' => __('main.educational') . ' *',
+                                    'placeholder' => " Educational Institution  *",
                                 ]) ?>
                             @if ($errors->has('educational'))
                                 <span class="help-block">
@@ -170,7 +169,7 @@
                         <div class="input-text">
                             <?= Form::text('failOf_studies', '', [
                                     'class' => 'form-control',
-                                    'placeholder' => __('main.failOf_studies') . ' *',
+                                    'placeholder' => " Field of studies *",
                                 ]) ?>
                             @if ($errors->has('failOf_studies'))
                                 <span class="help-block">
@@ -182,7 +181,7 @@
                         <div class="input-text">
                             <?= Form::text('yearOfStudies', '', [
                                     'class' => 'form-control datepicker',
-                                    'placeholder' => __('main.yearOfStudies') . ' *',
+                                    'placeholder' => " Year of studies  *",
                                 ]) ?>
                             @if ($errors->has('yearOfStudies'))
                                 <span class="help-block">
@@ -196,7 +195,7 @@
                         <div class="input-text">
                             <?= Form::text('expected_year_graduation', '', [
                                     'class' => 'form-control',
-                                    'placeholder' => 'Year of graduation *',
+                                    'placeholder' => " Year of graduation *",
                                 ]) ?>
                             @if ($errors->has('expected_year_graduation'))
                                 <span class="help-block">
@@ -254,7 +253,7 @@
                         <div class="input-text">
                             <?= Form::text('other_languages', '', [
                                     'class' => 'form-control datepicker',
-                                    'placeholder' => __('main.other_languages') . '',
+                                    'placeholder' => " Other language(s)",
                                 ]) ?>
                             @if ($errors->has('other_languages'))
                                 <span class="help-block">
@@ -307,6 +306,9 @@
 @section('css')
 
     <style>
+
+
+
         /* Style the radio container (optional) */
         .radio-container {
             margin: 10px 0;

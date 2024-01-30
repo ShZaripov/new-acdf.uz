@@ -31,25 +31,7 @@ class FormController extends Controller
 
 
  
-        // dd($request);
-
-        // $validator = new Validators();
-        // $validator2 = $validator->contact_form($request);
-        // if (count($validator2->errors()) > 0) {
-        //     $request->session()->flash('error', 'Error!');
-        //     return redirect()->route('form.index')
-        //         ->withInput($request->input())
-        //         ->withErrors($validator2);
-        // } else {
-        //     $res = $this->repo->createContactRequest($request);
-        //     if ($res) {
-        //         $request->session()->flash('success', 'Success!');
-        //         return redirect()->route('form.index');
-        //     } else {
-        //         $request->session()->flash('error', 'Error!');
-        //         return back();
-        //     }
-        // }
+        // dd($request)
     
 
    
@@ -78,7 +60,7 @@ class FormController extends Controller
      */
     
     public function exportExcel() {
-        return Excel::download(new FormExport, 'form.xlsx');
+        return Excel::download(new FormExport, 'opencall.xlsx');
     }
 
 

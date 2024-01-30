@@ -39,62 +39,16 @@ function() {
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
     Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/reset', 'Auth\ResetPasswordController@reset');
-
 	Route::get('/', 'FormController@index')->name('home');
-
+	//exportExcel
 	Route::get('/exportExcel', 'FormController@exportExcel')->name('exportExcel');
 	Route::post('/subscribers', 'MainController@subscriber')->name('subscribers');
 	Route::get('/search', 'MainController@search')->name('site.search');
 	Route::get('/contacts', 'MainController@contacts')->name('site.contacts');
     Route::get('/vacancies', 'MainController@vacancies')->name('site.vacancies');
-	//
 	// Route::post('/form/submit' , 'FormController@contactForm')->name('contact.form');
 	Route::resource('/form', "FormController");
 	
-	// Route::get('/form', 'ContactController@index')->name('form.contact');
-
-	
-	// Route::controller(FormController::class)->group(function () {
-		// Route::post('/form', 'FormController@store')->name('form.store');
-	//
-	// });
-	
-	// Route::resource('contact', 'ContactController', [
-	// 	'only' => ['index', 'store']
-	// ]);
-	// Route::prefix('contact')->group(function () {
-	// 	Route::get('contact', function () {
-	// 		// Matches The "/admin/users" URL
-	// 		Route::get('/contact', 'ContactController@index')->name('contact');
-	// 		Route::post('/', 'ContactController@store')->name('sendMessage');
-	// 	});
-	// 	Route::get('/show-messages', 'ContactController@showMessages')->name('show-messages');
-	// });
-// 	Route::prefix('contact')->group(function () {
-
-// 		Route::get('/', 'ContactController@index')->name('contact');
-// 		Route::post('/', 'ContactController@sendMessage')->name('sendMessage');
-// 		Route::get('/show-messages', 'ContactController@showMessages')->name('show.messages');
-	
-// });
-	
-
-	// Route::controller(ContactController::class)->group(function () {
-	// 	Route::get('/contact', 'index')->name('contact');
-	// 	Route::post('/contact', 'sendMessage')->name('sendMessage');
-	// 	Route::get('/show-messages', 'showMessages')->name('show.messages');
-	// });
-	// Route::post('/contact', 'ContactController@index')->name('contact');
-
-	// Route::get('/show-messages', 'ContactController@showMessages')->name('show.messages');
-	
-
-	// Route::get('/form', 'FormController@index')->name('form');                    //form
-
-	// Route::post('/form', 'FormContrsendMessage')->name('sendMessage');
-	// 	Route::get('/show-messages', 'showMessages')->name('show.messages');
-
-
 	Route::get('/activities', 'ActivityController@index')->name('site.activities');
 	Route::get('/programs', 'ProgramsController@index')->name('site.programs');
 	Route::get('/programs/{id}', 'ProgramsController@show')->name('site.programs.show');
