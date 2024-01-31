@@ -18,7 +18,7 @@
         <table class="table">
             <thead>
                 <tr class="mb-4">
-                    <th style="background-color: powderblue">Id</th>
+                    <th style="background-color: powderblue" class="mb-4">Id</th>
                     <th style="background-color: powderblue">Name</th>
                     <th style="background-color: powderblue">Surname</th>
                     <th style="background-color: powderblue">Phone</th>
