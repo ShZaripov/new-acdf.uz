@@ -273,11 +273,8 @@
                                 <label for="radio-2">no</label>
                             </div>
                         </div>
-                       
-                        
 
                         <div class="input-text">
-
                             <?= Form::textarea('about_you_eng', '', [
                                     'class' => 'form-control',
                                     'placeholder' => __('main.about_you_eng') . ' *',

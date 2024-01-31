@@ -491,7 +491,7 @@ class Validators
              'english_level'               => 'string',
              'level_of_italian'               => 'string',
              'other_languages'               => 'string',
-             'about_you_eng'               => 'required|string|min:1|max:100',
+             'about_you_eng'               => 'required|string|min:1|max:254',
              'Citizenship'               => 'required|string',
 
         ], $this->messages);

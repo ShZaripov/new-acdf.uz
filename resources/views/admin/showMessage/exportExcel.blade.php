@@ -17,7 +17,7 @@
     <div class="table-responsive">
         <table class="table">
             <thead>
-                <tr>
+                <tr class="mb-4">
                     <th style="background-color: powderblue">Id</th>
                     <th style="background-color: powderblue">Name</th>
                     <th style="background-color: powderblue">Surname</th>
@@ -124,7 +124,7 @@
                 top: 30px;
                 width: 20px;
             }
-            
+
         </style>
     @endsection
 </body>
